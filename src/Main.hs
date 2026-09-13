@@ -56,7 +56,7 @@ updateModel = \case
     io_ (pushRoute route)
 -----------------------------------------------------------------------------
 -- | View function, with routing
-viewModel :: Route -> View context Route Action
+viewModel :: Route -> View context props Route Action
 viewModel v = vfrag 
   [ h1_
     [ Style.style_ ["font-family" =: "monospace"] ]
